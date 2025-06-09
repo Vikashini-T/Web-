@@ -24,25 +24,25 @@
         }
     </style>
     <form>
-        <label for="Name: ">Name: </label>
+        <label for="nameInput">Name: </label>
         <input type="text" id="nameInput" required>
         <br>
-        <label for="Email: ">Email: </label>
+        <label for="emailInput">Email: </label>
         <input type="email" id="emailInput" required>
         <br>
-        <label for="Register Number: ">Register Number: </label>
+        <label for="regnoInput">Register Number: </label>
         <input type="text" id="regnoInput" required>
         <br>
-        <label for="Department: ">Department: </label>
+        <label for="deptInput">Department: </label>
         <input type="text" id="deptInput" required>
         <br>    
     </form>
     <div class="display">
         <button onclick="show()">Submit</button>
-        <h1 id="nameDisplay"></h1>
-        <h2 id="emailDisplay"></h2>
-        <h3 id="regnoDisplay"></h3>
-        <h4 id="deptDisplay"></h4>
+        <p id="nameDisplay"></p>
+        <p id="emailDisplay"></p>
+        <p id="regnoDisplay"></p>
+        <p id="deptDisplay"></p>
     </div>
     <script>
         function show(){
@@ -50,10 +50,10 @@
             const email=document.getElementById("emailInput").value; 
             const regno=document.getElementById("regnoInput").value;
             const dept=document.getElementById("deptInput").value;
-            document.getElementById("nameDisplay").innerHTML=name;
-            document.getElementById("emailDisplay").innerHTML=email;
-            document.getElementById("regnoDisplay").innerHTML=regno;
-            document.getElementById("deptDisplay").innerHTML=dept; 
+            document.getElementById("nameDisplay").innerHTML="Name: " +name;
+            document.getElementById("emailDisplay").innerHTML="Email: "+email;
+            document.getElementById("regnoDisplay").innerHTML="Register Number: "+regno;
+            document.getElementById("deptDisplay").innerHTML="Department: "+dept; 
         }
     </script>
 </body>
